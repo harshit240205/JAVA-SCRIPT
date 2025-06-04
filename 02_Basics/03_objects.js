@@ -26,6 +26,15 @@ JsUser.greeting = function(){
     console.log("Hello JS User");
     
 }
+
 console.log(JsUser.greeting);
 console.log(JsUser.greeting());
+
+JsUser.greetingTwo = function(){
+    console.log(`Hello JSuser, ${this.name}`); // To give reference to any element in object
+    
+}
+
+console.log(JsUser.greetingTwo());
+
 
