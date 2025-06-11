@@ -1,0 +1,48 @@
+// JavaScript Execution context -> GLobal Execution context (It will execute in one thread & JavaScript is an single threaded) 
+// -Global Execution Context
+// -Function Execution Context
+// -Eval Execution Context
+
+// JavaScript code run in 2 Phases
+// - Memory creation Phase
+// - Execution Phase
+
+let val1 = 10
+let val2 = 5
+
+function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
+// Global Execution (using this)
+
+// Memeory Phase:
+// val1 = undefined
+// val2 = undefined
+// addNum = definition 
+// result1 = undefined
+// result2 = undefined
+
+// Execution Phase:
+// val1 = 10
+// val2 = 5
+// addNum = Sand Box(new variable envoirnment + Execution thread) when ever the function will call this will create, 
+// Now for this function both Memory creation & Execution will again create.This will be deleted after execution. 
+
+// Memory Phase:
+// val1 = undefined
+// val2 = undefined
+// total = udefined 
+
+// Execution Phase:
+// num1 = 10
+// num2 = 5
+// total = 15 (Now the total will be return back to the Global execution context)
+
+// Now this will continue same for result2
+
+
+// call Stack: You can visulise it in the browser by creating snippit
