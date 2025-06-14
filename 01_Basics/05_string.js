@@ -23,7 +23,7 @@ console.log(newStringone);
 console.log(newStringone.trim());
 
 const url = "http://harshit&20parmar.info"
-console.log(url.replace('%20', '-'));
+console.log(url.replace('&20', '-'));
 
 console.log(url.includes('harshit'));
 
