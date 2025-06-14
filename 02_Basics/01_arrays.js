@@ -20,7 +20,7 @@ console.log(myArr);
 console.log(myArr.includes(9)); // it will give the result in boolean weather the number is present in the array or not.
 console.log(myArr.indexOf(4)); // it will give the index of the particular value
 
-const newArr = myArr.join() // This will conver the array into String
+const newArr = myArr.join() // This will convert the array into String
 console.log(myArr);
 console.log(typeof newArr);
 
