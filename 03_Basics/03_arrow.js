@@ -5,17 +5,17 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`${this.username}, Welcome to Website`); // this keyword is use to refer the current context
-        console.log(this); 
+        console.log(this); // This will print the 
         
     }
 
 }
 
-user.welcomeMessage()
-user.username = "sam"
-user.welcomeMessage()
+user.welcomeMessage() // This will print the entire object
+user.username = "sam" // Change the value of the username
+user.welcomeMessage() // This will print the entire updated object
 
-console.log(this); // this will refer top the empty object
+console.log(this); // this will refer to the empty object
 
 // But when you do this on the console it will return the window object becasue in the browser the global object is Window object
 
