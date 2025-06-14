@@ -1,4 +1,4 @@
-var c = 300 // the valie outside the block is in global scope
+var c = 300 // the value outside the block is in global scope
 
 if(true)
     {
