@@ -20,7 +20,7 @@ console.log(loginUserMessage());
 
 // Concept of adding items in the cart
 
-function calculateCartPrice(...num1){ // This is called Rest Operator
+function calculateCartPrice(...num1) { // This is called the Rest Operator; we can provide multiple inputs in this function.
     return num1
 }
 
