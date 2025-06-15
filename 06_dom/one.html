@@ -3,15 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning on chai aur code</h1>
+<body class="bg-black">
+    <div>
+        <h1 id = "title" class="heading">DOM learning on chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
 </body>
 </html>
 
 
+
+
 <!-- There is an proper flowchart of HTML and we can also do some manupluations by using document.(getElementByID... etc) -->
  <!-- You can try it on console as well. -->
+
+ <!-- document.getElementById('title') -->
+  <!-- title.style.backgroundColor = 'green'
+'green'
+title.textContent
+'DOM learning on chai aur code'
+title.innerHTML
+'DOM learning on chai aur code'
+title.innerText
+'DOM learning on chai aur code' -->
+
+
+
+
+<!-- 
+difference between innerText & textContent
+
+const title = document.getElementById('title')
+undefined
+title
+<h1 id=​"title" class=​"heading">​…​</h1>​
+title.innerText
+'DOM learning on chai aur code'
+title.textContent
+'DOM learning on chai aur code test text' 
+title.innerHTML
+'DOM learning on chai aur code <span style="display: none;">test text</span>
+
+-->
+
+<!-- document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('h2')
+<h2>​Lorem, ipsum dolor.​</h2>​
+document.querySelectorAll('h2')
+NodeList(2) [h2, h2]0: h21: h2length: 2[[Prototype]]: NodeList
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​ -->
